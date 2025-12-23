@@ -1,4 +1,4 @@
-# 🎓 College Student Placement Prediction Using Machine Learning
+# 🎓 College Student Placement Prediction 
 
 ### 📌 Project Overview
 This project focuses on predicting whether a student will be placed or not placed based on academic, technical, and skill-based attributes using Machine Learning classification models. The goal is to assist educational institutions and students in understanding the key factors influencing placement outcomes.
