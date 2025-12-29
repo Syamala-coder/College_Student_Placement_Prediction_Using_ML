@@ -119,12 +119,13 @@ if st.button("🔮 Predict Placement"):
     if prediction == 1 or prediction == "Yes":
         st.markdown(
             "<h2 style='color:#006400; background:#90EE90; padding:12px; border-radius:10px;'>"
-            "✅ Prediction: PLACED</h2>",
+            " Prediction: PLACED</h2>",
             unsafe_allow_html=True
         )
     else:
         st.markdown(
             "<h2 style='color:#8B0000; background:#FFCCCC; padding:12px; border-radius:10px;'>"
-            "❌ Prediction: NOT PLACED</h2>",
+            " Prediction: NOT PLACED</h2>",
             unsafe_allow_html=True
         )
+
