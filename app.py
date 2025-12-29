@@ -42,23 +42,23 @@ st.write("Enter student details below:")
 # --------------------------------
 # User Inputs (KEEP RAW VALUES)
 # --------------------------------
-IQ = st.number_input("IQ", min_value=50, max_value=200, value=100)
+IQ = st.number_input("IQ", min_value=0, max_value=100, value=70)
 
 Prev_Sem_Result = st.number_input(
     "Previous Semester Result (%)",
     min_value=0.0,
-    max_value=100.0,
-    value=70.0
+    max_value=10.0,
+    value=7.0
 )
 
 CGPA = st.number_input(
     "CGPA",
     min_value=0.0,
     max_value=10.0,
-    value=7.5
+    value=7.0
 )
 
-Academic_Performance = st.slider(
+Academic_Performance = st.number_input(
     "Academic Performance",
     min_value=1,
     max_value=10,
@@ -70,14 +70,14 @@ Internship_Experience = st.selectbox(
     ["Yes", "No"]
 )
 
-Extra_Curricular_Score = st.slider(
+Extra_Curricular_Score = st.number_input(
     "Extra Curricular Score",
     min_value=0,
     max_value=10,
     value=5
 )
 
-Communication_Skills = st.slider(
+Communication_Skills = st.number_input(
     "Communication Skills",
     min_value=1,
     max_value=10,
@@ -87,8 +87,8 @@ Communication_Skills = st.slider(
 Projects_Completed = st.number_input(
     "Projects Completed",
     min_value=0,
-    max_value=20,
-    value=3
+    max_value=10,
+    value=4
 )
 
 # --------------------------------
@@ -128,4 +128,5 @@ if st.button("🔮 Predict Placement"):
             " Prediction: NOT PLACED</h2>",
             unsafe_allow_html=True
         )
+
 
