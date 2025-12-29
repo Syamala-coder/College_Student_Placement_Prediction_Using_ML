@@ -48,21 +48,21 @@ Prev_Sem_Result = st.number_input(
     "Previous Semester Result (%)",
     min_value=0.0,
     max_value=10.0,
-    value=7.0
+    value>=7.0
 )
 
 CGPA = st.number_input(
     "CGPA",
     min_value=0.0,
     max_value=10.0,
-    value=7.0
+    value>=7.0
 )
 
 Academic_Performance = st.number_input(
     "Academic Performance",
     min_value=1,
     max_value=10,
-    value=7
+    value>=7
 )
 
 Internship_Experience = st.selectbox(
@@ -74,21 +74,21 @@ Extra_Curricular_Score = st.number_input(
     "Extra Curricular Score",
     min_value=0,
     max_value=10,
-    value=5
+    value>=5
 )
 
 Communication_Skills = st.number_input(
     "Communication Skills",
     min_value=1,
     max_value=10,
-    value=6
+    value>=6
 )
 
 Projects_Completed = st.number_input(
     "Projects Completed",
     min_value=0,
     max_value=10,
-    value=4
+    value>=4
 )
 
 # --------------------------------
@@ -128,5 +128,6 @@ if st.button("🔮 Predict Placement"):
             " Prediction: NOT PLACED</h2>",
             unsafe_allow_html=True
         )
+
 
 
